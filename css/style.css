@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+
+.site {
+  display: flex; 
+  width: 100%; 
+  height: 100vh; 
+}
+.dark .side-bar{
+  margin-bottom: 29rem;
+}
+.dark .icon-container {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6589ab;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.dark .icon-container .fas{
+  margin: 12px;
+  font-size: medium;
+}
+.dark .icon-container .fa-solid{
+  margin: 12px;
+  font-size: medium;
+}
+.dark .icon-container i {
+  padding-top: 4px;
+  font-size: 1.2em;
+  color: white;
+}
+
+.bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  height: 100%; 
+  font-size: 1.5em;
+  position: relative;
+}
+
+.dark {
+  background-color: white;
+  width: 5%; 
+  display: flex;
+  flex-direction: column;
+}
+
+.side-navbar {
+  background-color: rgb(247, 247, 247);
+  width: 20%; 
+  justify-items: center;
+  position: relative;
+}
+
+.side-navbar img{
+  position: absolute;
+  border-radius: 50%;
+  margin-bottom: 35rem;
+  background-color: #3783cb;
+  width: 35%;
+  height: 13%;
+  
+}
+.text{
+  margin-top: 14px;
+  text-align: center;
+  margin-bottom:25rem;
+  color: #000;
+  position: absolute;
+}
+.text span {
+  line-height: 2rem;
+}
+.logo{
+  margin-top: 14px;;
+  position: absolute;
+  margin-bottom: 19rem;
+}
+.logo .fa-brands{
+  color: #3783cb;
+  font-size: large;
+  padding: 10px;
+  border: .2px solid rgb(176, 175, 175);
+  border-radius: 50%;
+}
+.logo .fa-brands:hover{
+  color: white;
+  background-color: #3783cb;
+}
+.text span{
+  font-size: medium;
+}
+
+.side-navbar section{
+  border: 1px solid rgb(206, 198, 198);
+  width: 100%;
+  position: absolute;
+  margin-bottom: 14rem;
+}
+
+.about {
+  margin-top:85% ;
+  margin-right: 2rem;
+
+}
+.about ul .list {
+  margin: 15px;
+  list-style-type: none;
+  padding: 10px 40px;
+  font-size: 1rem;
+  color: #000;
+  border-radius: 10px;
+  width: 100%;
+  text-align: left;
+}
+.about ul .list:hover{
+  background-color: #3783cb;
+}
+.about ul .active{
+  background-color: #3783cb;
+}
+.about button{
+  padding: 10px 55px;
+  border-radius: 20px;
+  border:none;
+  background-color: #3783cb;
+  color: aliceblue;
+  font-weight: 500;
+  font-size: medium;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.body {
+  background-color: white;
+  width: 78%; 
+}
+
+
+.body .banner-card h4{
+  text-align: left !important;
+  color: #000;
+  
+  margin: 0 50rem 18rem 0;
+  font-weight: lighter;
+  
+}
+p { font-size: x-large;
+}
+
+h1 {
+  font-size: 50px;
+  color: #333;
+  display: inline-block;
+  position: relative; 
+}
+
+#developer {
+  color: #3783cb;
+  font-size: 5rem;
+  font-weight: bolder;
+  display: inline-block; /* Keep the text and cursor on the same line */
+  position: relative;
+}
+
+.cursor {
+  position: absolute;
+  background-color: #3783cb;
+  width: 10px;
+  height: 100%;
+  animation: blink 0.7s step-end infinite;
+  top: 0;
+  left: 100%; /* This ensures the cursor stays directly after the text */
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.content_head{
+  margin-top: 15%;
+ 
+}
+.third_div{
+  margin-left: 12px;
+}
+
+.small{
+  font-size: medium;
+  line-height: 25px;
+  margin-top: 12px;
+
+  
+}
+.small a{
+  text-decoration: none;
+  color:#3783cb ;
+  
+}
+
+.button_container a{
+  
+  display: inline-block;
+            margin-top: 15px;
+            padding: 20px 35px;
+            background-color: #3783cb; /* Button background color */
+            color: white; /* Button text color */
+            text-align: center; /* Center the text inside the button */
+            text-decoration: none; /* Remove underline */
+            border-radius: 30px; /* Rounded corners */
+            font-size: 16px; /* Text size */
+            font-weight: bold; /* Make the text bold */
+            transition: background-color 0.3s, transform 0.3s; /* Add transition for hover effect */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.counter-container {
+  margin-top: 100px;
+  display: flex;
+  gap: 30px;
+
+}
+
+.counter {
+  text-align: center;
+}
+
+.counter span {
+  font-size: 50px;
+  color: #3783cb;
+}
+
+.label{
+  margin-left: 12px;
+  padding-left: 12px;
+  font-size: small !important;
+   color: black !important; 
+   font-weight: lighter !important; 
+   border-left: 2px solid black !important;
+}
+
+.line{
+  border: 1px solid rgb(206, 198, 198);
+  margin-top: 60px;
+  width: 100%;
+  position: absolute;
+  margin-bottom: 14rem;
+  padding-left: 0 !important;
+
+}
+.first{
+  margin-left: 17px;
+}
